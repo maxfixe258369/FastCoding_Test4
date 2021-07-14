@@ -273,87 +273,131 @@ body {
   }
 }
 
-.section-content {
-  padding: 60px 21%;
-
-  .section-content-body {
+.section-branch {
+  .section-branch-inner {
     display: flex;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 57px 0;
 
-    .content-body-column {
-      margin: 0 10px;
+    .branch-element {
+      margin: 0 2%;
+      position: relative;
 
-      .paragraph-text {
-        padding-left: 10px;
+      .title-content {
+        font-size: 18px;
+        margin-bottom: 23px;
+        font-weight: bold;
+      }
+      .address {
+        font-size: 13px;
+        margin-bottom: 12px;
+        font-weight: 600;
+      }
 
-        .title-content {
-          font-size: 18px;
-          font-weight: bold;
-          margin-bottom: 23px;
-          margin-top: 60px;
-        }
+      .text-content {
+        font-size: 15px;
+        font-family: 'Roboto';
+        margin-bottom: 62px;
+      }
 
-        > .description {
-          font-size: 13px;
-          text-transform: uppercase;
-          color: #727272;
-          font-weight: bold;
-          margin-bottom: 13px;
-        }
+      .view-details {  
+        padding: 16px 50px;
+        border: none;
+        font-size: 16px;
+        color: white;
+        bottom: 0;
+        position: absolute;
+        background-color: #00c8c8;
+        cursor: pointer;
+        outline: none;
 
-        p {
-          text-align: justify;
-          font-size: 15px;
-          font-family: "Roboto";
-          color: #a5a3a3;
-
-          > a {
-            color: #00c8c8;
-            text-decoration: none;
-
-            &:hover {
-              color: blue;
-            }
-          }
+        &:hover {
+          background-color: white;
+          border: 1px solid black;
+          color: black;
         }
       }
+    }
+  }
+}
+
+.section-map {
+  background: #f8f8f8;
+
+  .active {
+    display: flex;
+  }
+
+  .unactive {
+    display: none;
+  }
+
+  .section-map-inner {
+    .map-image {
+      flex: 7.2;
 
       img {
         width: 100%;
+        height: 100%;
+      }
+    }
+
+    .map-text {
+      padding: 45px 2%;
+      flex: 3;
+
+      .title-content {
+        font-size: 18px;
+        margin-bottom: 25px;
+        font-weight: bold;
+      }
+      .address {
+        font-size: 13px;
+        margin-bottom: 12px;
+        font-weight: 600;
       }
 
-      .paragraph-second {
-        margin-top: 64px;
+      .text-content {
+        font-size: 15px;
+        font-family: 'Roboto';
+        margin-bottom: 22px;
+      }
 
-        .paragraph-text {
-          padding: 0;
-          .title-content {
-            margin-top: 25px;
-          }
+      .information {
+        i {
+          margin-right: 15px;
+          color: #8e8c8c;
+        }
+
+        span {
+          font-size: 14px;
+        }
+
+        .location {
+          margin-bottom: 8px;
+        }
+
+        .phone {
+          margin-bottom: 10px;
+        }
+
+        .site {
+          margin-bottom: 8px;
+        }
+
+        .mail {
+          margin-bottom: 8px;
         }
       }
 
-      .paragraph-third {
-        margin-top: 58px;
-
-        > img {
-          margin: 0 5px;
-        }
-
-        .paragraph-text {
-          .title-content {
-            margin-top: 20px;
-          }
-        }
-      }
-
-      .award {
+      .icon {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-wrap: wrap;
         margin-top: 55px;
 
-        > img {
-          width: 33%;
+        img {
+          margin-right: 14px;
         }
       }
     }
@@ -363,6 +407,7 @@ body {
 .footer {
   background-color: #f8f8f8;
   padding: 85px 21.5% 57px;
+  margin-top: 107px;
 
   .footer-content {
     display: flex;
@@ -426,10 +471,6 @@ body {
   padding: 15px 21.5%;
   align-items: center;
   font-size: 13px;
-}
-
-.section-content-mobile {
-  display: none;
 }
 
 .nav-mobile {
@@ -624,66 +665,9 @@ body {
     }
   }
 
-  .section-content {
-    display: none;
-  }
-
-  .section-content-mobile {
-    padding: 60px 10%;
-    display: block;
-
-    .section-content-body {
-      display: flex;
+  .section-map {
+    .section-map-inner {
       flex-direction: column;
-
-      .paragraph-text {
-        .title-content {
-          font-size: 18px;
-          font-weight: bold;
-          margin-bottom: 20px;
-          margin-top: 55px;
-        }
-
-        .description {
-          font-size: 13px;
-          text-transform: uppercase;
-          color: #727272;
-          font-weight: bold;
-          margin-bottom: 20px;
-        }
-
-        p {
-          text-align: justify;
-          font-size: 15px;
-          font-family: "Roboto";
-          color: #a5a3a3;
-
-          > a {
-            color: #00c8c8;
-            text-decoration: none;
-
-            &:hover {
-              color: blue;
-            }
-          }
-        }
-      }
-
-      img {
-        width: 100%;
-      }
-
-      .award {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin-top: 30px;
-
-        > img {
-          width: 144px;
-          height: 100px;
-        }
-      }
     }
   }
 
@@ -900,66 +884,25 @@ body {
     }
   }
 
-  .section-content {
-    display: none;
-  }
-
-  .section-content-mobile {
-    padding: 60px 10%;
-    display: block;
-
-    .section-content-body {
-      display: flex;
+  .section-branch {
+    .section-branch-inner {
       flex-direction: column;
 
-      .paragraph-text {
-        .title-content {
-          font-size: 18px;
-          font-weight: bold;
-          margin-bottom: 20px;
-          margin-top: 55px;
-        }
+      .branch-element {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid gainsboro;
 
-        .description {
-          font-size: 13px;
-          text-transform: uppercase;
-          color: #727272;
-          font-weight: bold;
-          margin-bottom: 20px;
-        }
-
-        p {
-          text-align: justify;
-          font-size: 15px;
-          font-family: "Roboto";
-          color: #a5a3a3;
-
-          > a {
-            color: #00c8c8;
-            text-decoration: none;
-
-            &:hover {
-              color: blue;
-            }
-          }
+        .view-details {
+          bottom: 20px;
         }
       }
+    }
+  }
 
-      img {
-        width: 100%;
-      }
-
-      .award {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin-top: 30px;
-
-        > img {
-          width: 100px;
-          height: 100px;
-        }
-      }
+  .section-map {
+    .section-map-inner {
+      flex-direction: column;
     }
   }
 
@@ -988,6 +931,10 @@ body {
     }
 
     .footer-image {
+      .award-image {
+        margin-right: 10px;
+      }
+
       img {
         margin: 0 2px;
       }

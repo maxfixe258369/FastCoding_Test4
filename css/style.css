@@ -224,78 +224,115 @@ body {
   margin-top: 30px;
 }
 
-.section-content {
-  padding: 60px 21%;
-}
-.section-content .section-content-body {
+.section-branch .section-branch-inner {
   display: flex;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 57px 0;
 }
-.section-content .section-content-body .content-body-column {
-  margin: 0 10px;
+.section-branch .section-branch-inner .branch-element {
+  margin: 0 2%;
+  position: relative;
 }
-.section-content .section-content-body .content-body-column .paragraph-text {
-  padding-left: 10px;
-}
-.section-content .section-content-body .content-body-column .paragraph-text .title-content {
+.section-branch .section-branch-inner .branch-element .title-content {
   font-size: 18px;
-  font-weight: bold;
   margin-bottom: 23px;
-  margin-top: 60px;
-}
-.section-content .section-content-body .content-body-column .paragraph-text > .description {
-  font-size: 13px;
-  text-transform: uppercase;
-  color: #727272;
   font-weight: bold;
-  margin-bottom: 13px;
 }
-.section-content .section-content-body .content-body-column .paragraph-text p {
-  text-align: justify;
+.section-branch .section-branch-inner .branch-element .address {
+  font-size: 13px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.section-branch .section-branch-inner .branch-element .text-content {
   font-size: 15px;
   font-family: "Roboto";
-  color: #a5a3a3;
+  margin-bottom: 62px;
 }
-.section-content .section-content-body .content-body-column .paragraph-text p > a {
-  color: #00c8c8;
-  text-decoration: none;
+.section-branch .section-branch-inner .branch-element .view-details {
+  padding: 16px 50px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  bottom: 0;
+  position: absolute;
+  background-color: #00c8c8;
+  cursor: pointer;
+  outline: none;
 }
-.section-content .section-content-body .content-body-column .paragraph-text p > a:hover {
-  color: blue;
+.section-branch .section-branch-inner .branch-element .view-details:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
 }
-.section-content .section-content-body .content-body-column img {
-  width: 100%;
+
+.section-map {
+  background: #f8f8f8;
 }
-.section-content .section-content-body .content-body-column .paragraph-second {
-  margin-top: 64px;
-}
-.section-content .section-content-body .content-body-column .paragraph-second .paragraph-text {
-  padding: 0;
-}
-.section-content .section-content-body .content-body-column .paragraph-second .paragraph-text .title-content {
-  margin-top: 25px;
-}
-.section-content .section-content-body .content-body-column .paragraph-third {
-  margin-top: 58px;
-}
-.section-content .section-content-body .content-body-column .paragraph-third > img {
-  margin: 0 5px;
-}
-.section-content .section-content-body .content-body-column .paragraph-third .paragraph-text .title-content {
-  margin-top: 20px;
-}
-.section-content .section-content-body .content-body-column .award {
+.section-map .active {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+}
+.section-map .unactive {
+  display: none;
+}
+.section-map .section-map-inner .map-image {
+  flex: 7.2;
+}
+.section-map .section-map-inner .map-image img {
+  width: 100%;
+  height: 100%;
+}
+.section-map .section-map-inner .map-text {
+  padding: 45px 2%;
+  flex: 3;
+}
+.section-map .section-map-inner .map-text .title-content {
+  font-size: 18px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+.section-map .section-map-inner .map-text .address {
+  font-size: 13px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.section-map .section-map-inner .map-text .text-content {
+  font-size: 15px;
+  font-family: "Roboto";
+  margin-bottom: 22px;
+}
+.section-map .section-map-inner .map-text .information i {
+  margin-right: 15px;
+  color: #8e8c8c;
+}
+.section-map .section-map-inner .map-text .information span {
+  font-size: 14px;
+}
+.section-map .section-map-inner .map-text .information .location {
+  margin-bottom: 8px;
+}
+.section-map .section-map-inner .map-text .information .phone {
+  margin-bottom: 10px;
+}
+.section-map .section-map-inner .map-text .information .site {
+  margin-bottom: 8px;
+}
+.section-map .section-map-inner .map-text .information .mail {
+  margin-bottom: 8px;
+}
+.section-map .section-map-inner .map-text .icon {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 55px;
 }
-.section-content .section-content-body .content-body-column .award > img {
-  width: 33%;
+.section-map .section-map-inner .map-text .icon img {
+  margin-right: 14px;
 }
 
 .footer {
   background-color: #f8f8f8;
   padding: 85px 21.5% 57px;
+  margin-top: 107px;
 }
 .footer .footer-content {
   display: flex;
@@ -349,10 +386,6 @@ body {
   padding: 15px 21.5%;
   align-items: center;
   font-size: 13px;
-}
-
-.section-content-mobile {
-  display: none;
 }
 
 .nav-mobile {
@@ -514,56 +547,8 @@ body {
     margin-left: 50px;
   }
 
-  .section-content {
-    display: none;
-  }
-
-  .section-content-mobile {
-    padding: 60px 10%;
-    display: block;
-  }
-  .section-content-mobile .section-content-body {
-    display: flex;
+  .section-map .section-map-inner {
     flex-direction: column;
-  }
-  .section-content-mobile .section-content-body .paragraph-text .title-content {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    margin-top: 55px;
-  }
-  .section-content-mobile .section-content-body .paragraph-text .description {
-    font-size: 13px;
-    text-transform: uppercase;
-    color: #727272;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  .section-content-mobile .section-content-body .paragraph-text p {
-    text-align: justify;
-    font-size: 15px;
-    font-family: "Roboto";
-    color: #a5a3a3;
-  }
-  .section-content-mobile .section-content-body .paragraph-text p > a {
-    color: #00c8c8;
-    text-decoration: none;
-  }
-  .section-content-mobile .section-content-body .paragraph-text p > a:hover {
-    color: blue;
-  }
-  .section-content-mobile .section-content-body img {
-    width: 100%;
-  }
-  .section-content-mobile .section-content-body .award {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 30px;
-  }
-  .section-content-mobile .section-content-body .award > img {
-    width: 144px;
-    height: 100px;
   }
 
   .footer {
@@ -737,56 +722,20 @@ body {
     margin-left: 50px;
   }
 
-  .section-content {
-    display: none;
-  }
-
-  .section-content-mobile {
-    padding: 60px 10%;
-    display: block;
-  }
-  .section-content-mobile .section-content-body {
-    display: flex;
+  .section-branch .section-branch-inner {
     flex-direction: column;
   }
-  .section-content-mobile .section-content-body .paragraph-text .title-content {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    margin-top: 55px;
+  .section-branch .section-branch-inner .branch-element {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid gainsboro;
   }
-  .section-content-mobile .section-content-body .paragraph-text .description {
-    font-size: 13px;
-    text-transform: uppercase;
-    color: #727272;
-    font-weight: bold;
-    margin-bottom: 20px;
+  .section-branch .section-branch-inner .branch-element .view-details {
+    bottom: 20px;
   }
-  .section-content-mobile .section-content-body .paragraph-text p {
-    text-align: justify;
-    font-size: 15px;
-    font-family: "Roboto";
-    color: #a5a3a3;
-  }
-  .section-content-mobile .section-content-body .paragraph-text p > a {
-    color: #00c8c8;
-    text-decoration: none;
-  }
-  .section-content-mobile .section-content-body .paragraph-text p > a:hover {
-    color: blue;
-  }
-  .section-content-mobile .section-content-body img {
-    width: 100%;
-  }
-  .section-content-mobile .section-content-body .award {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 30px;
-  }
-  .section-content-mobile .section-content-body .award > img {
-    width: 100px;
-    height: 100px;
+
+  .section-map .section-map-inner {
+    flex-direction: column;
   }
 
   .footer {
@@ -804,6 +753,9 @@ body {
   }
   .footer .footer-content ul li address {
     font-size: 8px;
+  }
+  .footer .footer-image .award-image {
+    margin-right: 10px;
   }
   .footer .footer-image img {
     margin: 0 2px;
