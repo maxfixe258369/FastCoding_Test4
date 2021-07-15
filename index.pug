@@ -1,194 +1,194 @@
 doctype html
-head
-  meta(charset='UTF-8')
-  meta(http-equiv='X-UA-Compatible' content='IE=edge')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  title Test4
-  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
-  script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous')
-  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous')
-  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous')
-  link(href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet')
-  link(href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet')
-  script(src='https://use.fontawesome.com/e70950e6ec.js')
-  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
-  link(rel='stylesheet' href='css/style.css')
-body 
-  mixin subnav-content(name)
-    a(href ="#")= name
-  header.header
-    .top-bar
-      .list
-        span Currency: GBP&nbsp;
-        i.fa.fa-angle-down(aria-hidden='true')
-        ul.show-list
-          li GBP
-          li GBP
-          li GBP
-      .register
-        a.sign-up(href='#') Register
-        a.sign-in(href='#') Sign in
-        .cart
-          i.fa.fa-shopping-cart(aria-hidden='true')
-          span empty
+html(lang="zxx")
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Test4
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet')
+    script(src='https://use.fontawesome.com/e70950e6ec.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    link(rel='stylesheet' href='css/style.css')
+  body 
+    mixin subnav-content(name)
+      a(href ="#")= name
+    header.header
+      .top-bar
+        .list
+          span Currency: GBP&nbsp;
           i.fa.fa-angle-down(aria-hidden='true')
-          .show-cart
-            .show-cart-head
-              span Shopping Cart
-              span.close &#x2715;
-            p You don&apos;t have any items in your cart.
-    .header-content
-      h1.logo
-        img(src='image/logo.jpg' alt='Logo Avenue')
-      nav.nav-header
-        .menu
-          .subnav
-            a(href='#') MENS
-            .subnav-content
-              .subnav-content-options
-                ul
-                  li
-                    h2.subnav-content-title
-                      +subnav-content('CASUALS')
-                  li
-                    +subnav-content('Jackets')
-                  li
-                    +subnav-content('Hoodies &amp; Sweatshirts')
-                  li
-                    +subnav-content('Polo Shirts')
-                ul
-                  li
-                    h2.subnav-content-title
-                      +subnav-content('FORMAL')
-                  li
-                    +subnav-content('Jackets')
-                  li
-                    +subnav-content('Shirts')
-                  li
-                    +subnav-content('Suits')
-                  li
-                    +subnav-content('Trousers')
-              img(src='image/sale.jpg' alt='Image Sale off')
-          .subnav
-            a(href='#') WOMENS
-            .subnav-content
-              .subnav-content-options
-                ul
-                  li
-                    h2.subnav-content-title
-                      +subnav-content('CASUALS')
-                  li
-                    +subnav-content('Jackets')
-                  li
-                    +subnav-content('Hoodies &amp; Sweatshirts')
-                  li
-                    +subnav-content('Polo Shirts')
-                ul
-                  li
-                    h2.subnav-content-title
-                      +subnav-content('FORMAL')
-                  li
-                    +subnav-content('Jackets')
-                  li
-                    +subnav-content('Shirts')
-                  li
-                    +subnav-content('Suits')
-                  li
-                    +subnav-content('Trousers')
-              img(src='image/sale.jpg' alt='Image Sale off')
-          .subnav
-            a(href='#') THE BRAND
-            .subnav-content
-              .subnav-content-options
-                ul
-                  li
-                    h2.subnav-content-title
-                      +subnav-content('CASUALS')
-                  li
-                    +subnav-content('Jackets')
-                  li
-                    +subnav-content('Hoodies &amp; Sweatshirts')
-                  li
-                    +subnav-content('Polo Shirts')
-                  li
-                    +subnav-content('Sportswear')
-                  li
-                    +subnav-content('Trousers &amp; Chinor')
-                  li
-                    +subnav-content('T-Shirts')
-                ul
-                  li
-                    h2.subnav-content-title
-                      +subnav-content('FORMAL')
-                  li
-                    +subnav-content('Jackets')
-                  li
-                    +subnav-content('Shirts')
-                  li
-                    +subnav-content('Suits')
-                  li
-                    +subnav-content('Trousers')
-              img(src='image/sale.jpg' alt='Image Sale off')
-          .subnav
-            a(href='#') LOCAL STORES
-            .subnav-content
-              .subnav-content-options
+          ul.show-list
+            li GBP
+            li GBP
+            li GBP
+        .register
+          a.sign-up(href='#') Register
+          a.sign-in(href='#') Sign in
+          .cart
+            i.fa.fa-shopping-cart(aria-hidden='true')
+            span empty
+            i.fa.fa-angle-down(aria-hidden='true')
+            .show-cart
+              .show-cart-head
+                span Shopping Cart
+                span.close &#x2715;
+              p You don&apos;t have any items in your cart.
+      .header-content
+        h1.logo
+          img(src='image/logo.jpg' alt='Logo Avenue')
+        nav.nav-header
+          .menu
+            .subnav
+              a(href='#') MENS
+              .subnav-content
                 .subnav-content-options
-                ul
-                  li
-                    h2.subnav-content-title
-                      +subnav-content('CASUALS')
-                  li
-                    +subnav-content('Jackets')
-                  li
-                    +subnav-content('Hoodies &amp; Sweatshirts')
-                  li
-                    +subnav-content('Polo Shirts')
-                ul
-                  li
-                    h2.subnav-content-title
-                      +subnav-content('FORMAL')
-                  li
-                    +subnav-content('Jackets')
-                  li
-                    +subnav-content('Shirts')
-                  li
-                    +subnav-content('Suits')
-                  li
-                    +subnav-content('Trousers')
-              img(src='image/sale.jpg' alt='Image Sale off')
-          .subnav
-            a(href='#') LOOK BOOK
-            .subnav-content
-              .subnav-content-options
-                ul
-                  li
-                    h2.subnav-content-title
-                      +subnav-content('CASUALS')
-                  li
-                    +subnav-content('Jackets')
-                  li
-                    +subnav-content('Hoodies &amp; Sweatshirts')
-                  li
-                    +subnav-content('Polo Shirts')
-                ul
-                  li
-                    h2.subnav-content-title
-                      +subnav-content('FORMAL')
-                  li
-                    +subnav-content('Jackets')
-                  li
-                    +subnav-content('Shirts')
-                  li
-                    +subnav-content('Suits')
-                  li
-                    +subnav-content('Trousers')
-              img(src='image/sale.jpg' alt='Image Sale off')
-        .search
-          input(type='text' placeholder='Search')
-          i.fa.fa-search(aria-hidden='true')
-  main
-    section.section-intro
+                  ul
+                    li
+                      h2.subnav-content-title
+                        +subnav-content('CASUALS')
+                    li
+                      +subnav-content('Jackets')
+                    li
+                      +subnav-content('Hoodies &amp; Sweatshirts')
+                    li
+                      +subnav-content('Polo Shirts')
+                  ul
+                    li
+                      h2.subnav-content-title
+                        +subnav-content('FORMAL')
+                    li
+                      +subnav-content('Jackets')
+                    li
+                      +subnav-content('Shirts')
+                    li
+                      +subnav-content('Suits')
+                    li
+                      +subnav-content('Trousers')
+                img(src='image/sale.jpg' alt='Image Sale off')
+            .subnav
+              a(href='#') WOMENS
+              .subnav-content
+                .subnav-content-options
+                  ul
+                    li
+                      h2.subnav-content-title
+                        +subnav-content('CASUALS')
+                    li
+                      +subnav-content('Jackets')
+                    li
+                      +subnav-content('Hoodies &amp; Sweatshirts')
+                    li
+                      +subnav-content('Polo Shirts')
+                  ul
+                    li
+                      h2.subnav-content-title
+                        +subnav-content('FORMAL')
+                    li
+                      +subnav-content('Jackets')
+                    li
+                      +subnav-content('Shirts')
+                    li
+                      +subnav-content('Suits')
+                    li
+                      +subnav-content('Trousers')
+                img(src='image/sale.jpg' alt='Image Sale off')
+            .subnav
+              a(href='#') THE BRAND
+              .subnav-content
+                .subnav-content-options
+                  ul
+                    li
+                      h2.subnav-content-title
+                        +subnav-content('CASUALS')
+                    li
+                      +subnav-content('Jackets')
+                    li
+                      +subnav-content('Hoodies &amp; Sweatshirts')
+                    li
+                      +subnav-content('Polo Shirts')
+                    li
+                      +subnav-content('Sportswear')
+                    li
+                      +subnav-content('Trousers &amp; Chinor')
+                    li
+                      +subnav-content('T-Shirts')
+                  ul
+                    li
+                      h2.subnav-content-title
+                        +subnav-content('FORMAL')
+                    li
+                      +subnav-content('Jackets')
+                    li
+                      +subnav-content('Shirts')
+                    li
+                      +subnav-content('Suits')
+                    li
+                      +subnav-content('Trousers')
+                img(src='image/sale.jpg' alt='Image Sale off')
+            .subnav
+              a(href='#') LOCAL STORES
+              .subnav-content
+                .subnav-content-options
+                  .subnav-content-options
+                  ul
+                    li
+                      h2.subnav-content-title
+                        +subnav-content('CASUALS')
+                    li
+                      +subnav-content('Jackets')
+                    li
+                      +subnav-content('Hoodies &amp; Sweatshirts')
+                    li
+                      +subnav-content('Polo Shirts')
+                  ul
+                    li
+                      h2.subnav-content-title
+                        +subnav-content('FORMAL')
+                    li
+                      +subnav-content('Jackets')
+                    li
+                      +subnav-content('Shirts')
+                    li
+                      +subnav-content('Suits')
+                    li
+                      +subnav-content('Trousers')
+                img(src='image/sale.jpg' alt='Image Sale off')
+            .subnav
+              a(href='#') LOOK BOOK
+              .subnav-content
+                .subnav-content-options
+                  ul
+                    li
+                      h2.subnav-content-title
+                        +subnav-content('CASUALS')
+                    li
+                      +subnav-content('Jackets')
+                    li
+                      +subnav-content('Hoodies &amp; Sweatshirts')
+                    li
+                      +subnav-content('Polo Shirts')
+                  ul
+                    li
+                      h2.subnav-content-title
+                        +subnav-content('FORMAL')
+                    li
+                      +subnav-content('Jackets')
+                    li
+                      +subnav-content('Shirts')
+                    li
+                      +subnav-content('Suits')
+                    li
+                      +subnav-content('Trousers')
+                img(src='image/sale.jpg' alt='Image Sale off')
+          .search
+            input(type='text' placeholder='Search')
+            i.fa.fa-search(aria-hidden='true')
+        
       nav.nav-mobile
         #mySidenav.sidenav
           .logo
@@ -348,200 +348,200 @@ body
               span Shopping Cart
               span.close &#x2715;
             p You don&apos;t have any items in your cart.
-      .intro-title
+    main
+      section.section-intro
         h2.title-content
           | LOCAL 
           span STORES
-      .intro-content
-        p FIND A STORE NEAR YOU
+        .intro-content
+          p FIND A STORE NEAR YOU
+      
+      section.section-branch
+        .section-branch-inner
+          .branch-element.branch-london
+            h2.title-content LONDON
+            h3.address 180-182 REGENT STREET, LONDON, W1B 5BT
+            p.text-content
+              | Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.
+            button.view-details.tablinks(onclick="openCity(event, 'London')") VIEW DETAILS
+          .branch-element.branch-newyork
+            h2.title-content NEW YORK
+            h3.address 109 COLUMBUS CIRCLE, NEW YORK, NY 10023
+            p.text-content
+              | Nunc non posuere nisl. Etiam finibus vel dui nec lobortis. Aliquam egestas, sem quis condimentum venenatis, erat leo fermentum dolor, non sollicitudin massa mi eu nibh. Nullam vitae aliquam dui, non sodales nisl.
+            button.view-details.tablinks(onclick="openCity(event, 'NewYork')") VIEW DETAILS
+          .branch-element.branch-paris
+            h2.title-content PARIS
+            h3.address 2133 RUE SAINT-HONORE, 75001 PARIS
+            p.text-content
+              | Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras ligula.
+            button.view-details.tablinks(onclick="openCity(event, 'Paris')") VIEW DETAILS
+            
+      section.section-map
+        #London.section-map-inner.tabcontent.active
+          .map-image
+            img(src='image/map.png' alt='Map Image' loading='lazy')
+          .map-text
+            h2.title-content LONDON
+            h3.address 180-182 REGENT STREET, LONDON, W1B 5BT
+            p.text-content
+              | Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.
+            address.information
+              .location
+                i.fa.fa-map-marker(aria-hidden='true')
+                span 180-182 REGENT STREET, LONDON, W1B 5BT
+              .phone
+                i.fa.fa-phone(aria-hidden='true')
+                span 0123-456-789
+              .site
+                i.fa.fa-link(aria-hidden='true')
+                span www.yourwebsite.com 
+              .mail
+                i.fa.fa-envelope-o(aria-hidden='true')
+                span support@yourwebsite.com
+              .time
+                i.fa.fa-clock-o(aria-hidden='true')
+                span Monday-Friday: 9am to 6pm Saturday: 10am to 6pm Sunday: 10am to 2pm
+            .icon
+              img.facebook-icon(src='image/facebook_icon.png' alt='Facebook icon' loading='lazy')
+              img.twitter-icon(src='image/twitter_icon.png' alt='Twitter icon' loading='lazy')
+              img.instagram-icon(src='image/instagram.png' alt='Instagram icon' loading='lazy')
+              img.pinterest-icon(src='image/pinterest_icon.png' alt='Pinterest icon' loading='lazy')
+        #NewYork.section-map-inner.tabcontent.unactive
+          .map-image
+            img(src='image/map.png' alt='Map Image' loading='lazy')
+          .map-text
+            h2.title-content NEW YORK
+            h3.address 109 COLUMBUS CIRCLE, NEW YORK, NY 10023
+            p.text-content
+              | Nunc non posuere nisl. Etiam finibus vel dui nec lobortis. Aliquam egestas, sem quis condimentum venenatis, erat leo fermentum dolor, non sollicitudin massa mi eu nibh. Nullam vitae aliquam dui, non sodales nisl.
+            address.information
+              .location
+                i.fa.fa-map-marker(aria-hidden='true')
+                span 109 COLUMBUS CIRCLE, NEW YORK, NY 10023
+              .phone
+                i.fa.fa-phone(aria-hidden='true')
+                span 0123-456-789
+              .site
+                i.fa.fa-link(aria-hidden='true')
+                span www.yourwebsite.com 
+              .mail
+                i.fa.fa-envelope-o(aria-hidden='true')
+                span support@yourwebsite.com
+              .time
+                i.fa.fa-clock-o(aria-hidden='true')
+                span Monday-Friday: 9am to 6pm Saturday: 10am to 6pm Sunday: 10am to 2pm
+            .icon
+              img.facebook-icon(src='image/facebook_icon.png' alt='Facebook icon' loading='lazy')
+              img.twitter-icon(src='image/twitter_icon.png' alt='Twitter icon' loading='lazy')
+              img.instagram-icon(src='image/instagram.png' alt='Instagram icon' loading='lazy')
+              img.pinterest-icon(src='image/pinterest_icon.png' alt='Pinterest icon' loading='lazy')
+        #Paris.section-map-inner.tabcontent.unactive
+          .map-image
+            img(src='image/map.png' alt='Map Image' loading='lazy')
+          .map-text
+            h2.title-content PARIS
+            h3.address 2133 RUE SAINT-HONORE, 75001 PARIS
+            p.text-content
+              | Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras ligula.
+            address.information
+              .location
+                i.fa.fa-map-marker(aria-hidden='true')
+                span 2133 RUE SAINT-HONORE, 75001 PARIS
+              .phone
+                i.fa.fa-phone(aria-hidden='true')
+                span 0123-456-789
+              .site
+                i.fa.fa-link(aria-hidden='true')
+                span www.yourwebsite.com 
+              .mail
+                i.fa.fa-envelope-o(aria-hidden='true')
+                span support@yourwebsite.com
+              .time
+                i.fa.fa-clock-o(aria-hidden='true')
+                span Monday-Friday: 9am to 6pm Saturday: 10am to 6pm Sunday: 10am to 2pm
+            .icon
+              img.facebook-icon(src='image/facebook_icon.png' alt='Facebook icon' loading='lazy')
+              img.twitter-icon(src='image/twitter_icon.png' alt='Twitter icon' loading='lazy')
+              img.instagram-icon(src='image/instagram.png' alt='Instagram icon' loading='lazy')
+              img.pinterest-icon(src='image/pinterest_icon.png' alt='Pinterest icon' loading='lazy')
+
+
     
-    section.section-branch
-      .section-branch-inner
-        .branch-element.branch-london
-          h2.title-content LONDON
-          h3.address 180-182 REGENT STREET, LONDON, W1B 5BT
-          p.text-content
-            | Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.
-          button.view-details.tablinks(onclick="openCity(event, 'London')") VIEW DETAILS
-        .branch-element.branch-newyork
-          h2.title-content NEW YORK
-          h3.address 109 COLUMBUS CIRCLE, NEW YORK, NY 10023
-          p.text-content
-            | Nunc non posuere nisl. Etiam finibus vel dui nec lobortis. Aliquam egestas, sem quis condimentum venenatis, erat leo fermentum dolor, non sollicitudin massa mi eu nibh. Nullam vitae aliquam dui, non sodales nisl.
-          button.view-details.tablinks(onclick="openCity(event, 'NewYork')") VIEW DETAILS
-        .branch-element.branch-paris
-          h2.title-content PARIS
-          h3.address 2133 RUE SAINT-HONORE, 75001 PARIS
-          p.text-content
-            | Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras ligula.
-          button.view-details.tablinks(onclick="openCity(event, 'Paris')") VIEW DETAILS
-          
-    section.section-map
-      #London.section-map-inner.tabcontent.active
-        .map-image
-          img(src='image/map.png' alt='Map Image')
-        .map-text
-          h2.title-content LONDON
-          h3.address 180-182 REGENT STREET, LONDON, W1B 5BT
-          p.text-content
-            | Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.
-          address.information
-            .location
-              i.fa.fa-map-marker(aria-hidden='true')
-              span 180-182 REGENT STREET, LONDON, W1B 5BT
-            .phone
-              i.fa.fa-phone(aria-hidden='true')
-              span 0123-456-789
-            .site
-              i.fa.fa-link(aria-hidden='true')
-              span www.yourwebsite.com 
-            .mail
-              i.fa.fa-envelope-o(aria-hidden='true')
-              span support@yourwebsite.com
-            .time
-              i.fa.fa-clock-o(aria-hidden='true')
-              span Monday-Friday: 9am to 6pm Saturday: 10am to 6pm Sunday: 10am to 2pm
-          .icon
-            img.facebook-icon(src='image/facebook_icon.png')
-            img.twitter-icon(src='image/twitter_icon.png')
-            img.instagram-icon(src='image/instagram.png')
-            img.pinterest-icon(src='image/pinterest_icon.png')
-      #NewYork.section-map-inner.tabcontent.unactive
-        .map-image
-          img(src='image/map.png' alt='Map Image')
-        .map-text
-          h2.title-content NEW YORK
-          h3.address 109 COLUMBUS CIRCLE, NEW YORK, NY 10023
-          p.text-content
-            | Nunc non posuere nisl. Etiam finibus vel dui nec lobortis. Aliquam egestas, sem quis condimentum venenatis, erat leo fermentum dolor, non sollicitudin massa mi eu nibh. Nullam vitae aliquam dui, non sodales nisl.
-          address.information
-            .location
-              i.fa.fa-map-marker(aria-hidden='true')
-              span 109 COLUMBUS CIRCLE, NEW YORK, NY 10023
-            .phone
-              i.fa.fa-phone(aria-hidden='true')
-              span 0123-456-789
-            .site
-              i.fa.fa-link(aria-hidden='true')
-              span www.yourwebsite.com 
-            .mail
-              i.fa.fa-envelope-o(aria-hidden='true')
-              span support@yourwebsite.com
-            .time
-              i.fa.fa-clock-o(aria-hidden='true')
-              span Monday-Friday: 9am to 6pm Saturday: 10am to 6pm Sunday: 10am to 2pm
-          .icon
-            img.facebook-icon(src='image/facebook_icon.png')
-            img.twitter-icon(src='image/twitter_icon.png')
-            img.instagram-icon(src='image/instagram.png')
-            img.pinterest-icon(src='image/pinterest_icon.png')
-      #Paris.section-map-inner.tabcontent.unactive
-        .map-image
-          img(src='image/map.png' alt='Map Image')
-        .map-text
-          h2.title-content PARIS
-          h3.address 2133 RUE SAINT-HONORE, 75001 PARIS
-          p.text-content
-            | Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras ligula.
-          address.information
-            .location
-              i.fa.fa-map-marker(aria-hidden='true')
-              span 2133 RUE SAINT-HONORE, 75001 PARIS
-            .phone
-              i.fa.fa-phone(aria-hidden='true')
-              span 0123-456-789
-            .site
-              i.fa.fa-link(aria-hidden='true')
-              span www.yourwebsite.com 
-            .mail
-              i.fa.fa-envelope-o(aria-hidden='true')
-              span support@yourwebsite.com
-            .time
-              i.fa.fa-clock-o(aria-hidden='true')
-              span Monday-Friday: 9am to 6pm Saturday: 10am to 6pm Sunday: 10am to 2pm
-          .icon
-            img.facebook-icon(src='image/facebook_icon.png')
-            img.twitter-icon(src='image/twitter_icon.png')
-            img.instagram-icon(src='image/instagram.png')
-            img.pinterest-icon(src='image/pinterest_icon.png')
-
-
-  
-  footer.footer
-    .footer-content
-      ul
-        li
-          h2.title-content INFORMATION
-        li
-          a(href='#') The brand
-        li
-          a(href='#') Local stores
-        li
-          a(href='#') Customer service
-        li
-          a(href='#') Privacy &amp; cookies
-        li
-          a(href='#') Site map
-      ul
-        li
-          h2.title-content WHY BUY FROM US
-        li
-          a(href='#') Shipping &amp; returns
-        li
-          a(href='#') Secure shopping
-        li
-          a(href='#') Testimonials
-        li
-          a(href='#') Award winning
-        li
-          a(href='#') Ethical trading
-      ul
-        li
-          h2.title-content YOUR ACCOUNT
-        li
-          a(href='#') Sign in
-        li
-          a(href='#') Register
-        li
-          a(href='#') View cart
-        li
-          a(href='#') View your lookbook
-        li
-          a(href='#') Track an order
-        li
-          a(href='#') Update information
-      ul
-        li
-          h2.title-content LOOKBOOK
-        li
-          a(href='#') Latest posts
-        li
-          a(href='#') Men&apos;s lookbook
-        li
-          a(href='#') Women&apos;s lookbook
-        li
-          a(href='#') Lookbooks RSS feed
-        li
-          a(href='#') View your lookbook
-        li
-          a(href='#') Delete your lookbook
-      ul
-        li
-          h2.title-content CONTACT DETAILS
-        li
-          address
-            | Head Office Avenue Fashion 180-182 Regent Street London 
-            br
-            br
-            |             Telephone: 0123-456-789 
-            br
-            br
-            |             Email: support@yourwebsite.com
-    .footer-image
-      img.award-image(src='image/award_winner.jpg' alt='Award Winner')
-      img.social-image(src='image/social.jpg' alt='Social')
-  .copy-right
-    small
-      &copy;2016 Avenue Fashion
-    small Design by RobbyDesign.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dev by Loremipsum.com 
-  script(src='js/script.js')
+    footer.footer
+      .footer-content
+        ul
+          li
+            h2.title-content INFORMATION
+          li
+            a(href='#') The brand
+          li
+            a(href='#') Local stores
+          li
+            a(href='#') Customer service
+          li
+            a(href='#') Privacy &amp; cookies
+          li
+            a(href='#') Site map
+        ul
+          li
+            h2.title-content WHY BUY FROM US
+          li
+            a(href='#') Shipping &amp; returns
+          li
+            a(href='#') Secure shopping
+          li
+            a(href='#') Testimonials
+          li
+            a(href='#') Award winning
+          li
+            a(href='#') Ethical trading
+        ul
+          li
+            h2.title-content YOUR ACCOUNT
+          li
+            a(href='#') Sign in
+          li
+            a(href='#') Register
+          li
+            a(href='#') View cart
+          li
+            a(href='#') View your lookbook
+          li
+            a(href='#') Track an order
+          li
+            a(href='#') Update information
+        ul
+          li
+            h2.title-content LOOKBOOK
+          li
+            a(href='#') Latest posts
+          li
+            a(href='#') Men&apos;s lookbook
+          li
+            a(href='#') Women&apos;s lookbook
+          li
+            a(href='#') Lookbooks RSS feed
+          li
+            a(href='#') View your lookbook
+          li
+            a(href='#') Delete your lookbook
+        ul
+          li
+            h2.title-content CONTACT DETAILS
+          li
+            address
+              | Head Office Avenue Fashion 180-182 Regent Street London 
+              br
+              br
+              |             Telephone: 0123-456-789 
+              br
+              br
+              |             Email: support@yourwebsite.com
+      .footer-image
+        img.award-image(src='image/award_winner.jpg' alt='Award Winner' loading='lazy')
+        img.social-image(src='image/social.jpg' alt='Social' loading='lazy')
+    .copy-right
+      small &copy;2016 Avenue Fashion 
+      small Design by RobbyDesign.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dev by Loremipsum.com 
+    script(src='js/script.js')

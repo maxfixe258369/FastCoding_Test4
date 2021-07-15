@@ -115,41 +115,41 @@ body {
 .header .top-bar .register .cart span {
   margin: 0 10px;
 }
-.header .header-content {
+.header > .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 6.5% 35px;
 }
-.header .header-content .nav-header {
+.header > .header-content .nav-header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 7px;
   padding-right: 7px;
 }
-.header .header-content .nav-header .menu {
+.header > .header-content .nav-header .menu {
   margin-right: 40px;
   display: flex;
 }
-.header .header-content .nav-header .menu .subnav {
+.header > .header-content .nav-header .menu .subnav {
   position: relative;
   cursor: pointer;
 }
-.header .header-content .nav-header .menu .subnav > a {
+.header > .header-content .nav-header .menu .subnav > a {
   text-decoration: none;
   color: #222;
   font-size: 13px;
   padding: 20px 30px;
   font-weight: bold;
 }
-.header .header-content .nav-header .menu .subnav:hover .subnav-content {
+.header > .header-content .nav-header .menu .subnav:hover .subnav-content {
   display: block;
 }
-.header .header-content .nav-header .menu .subnav:hover > a {
+.header > .header-content .nav-header .menu .subnav:hover > a {
   color: #00c8c8;
 }
-.header .header-content .nav-header .menu .subnav .subnav-content {
+.header > .header-content .nav-header .menu .subnav .subnav-content {
   position: absolute;
   display: none;
   background: white;
@@ -157,46 +157,46 @@ body {
   padding: 25px 0;
   box-shadow: 5px 10px 10px #8888;
 }
-.header .header-content .nav-header .menu .subnav .subnav-content .subnav-content-options {
+.header > .header-content .nav-header .menu .subnav .subnav-content .subnav-content-options {
   display: flex;
   margin-bottom: 20px;
 }
-.header .header-content .nav-header .menu .subnav .subnav-content .subnav-content-options ul li {
+.header > .header-content .nav-header .menu .subnav .subnav-content .subnav-content-options ul li {
   list-style-type: none;
   margin-bottom: 10px;
 }
-.header .header-content .nav-header .menu .subnav .subnav-content .subnav-content-options ul li:hover {
+.header > .header-content .nav-header .menu .subnav .subnav-content .subnav-content-options ul li:hover {
   color: black;
   font-weight: bold;
 }
-.header .header-content .nav-header .menu .subnav .subnav-content .subnav-content-options ul li .subnav-content-title > a {
+.header > .header-content .nav-header .menu .subnav .subnav-content .subnav-content-options ul li .subnav-content-title > a {
   text-decoration: none;
   color: #222;
   font-size: 12px;
   font-weight: bold;
 }
-.header .header-content .nav-header .menu .subnav .subnav-content .subnav-content-options ul li .subnav-content-title > a:hover {
+.header > .header-content .nav-header .menu .subnav .subnav-content .subnav-content-options ul li .subnav-content-title > a:hover {
   color: gray;
 }
-.header .header-content .nav-header .menu .subnav .subnav-content .subnav-content-options ul li > a {
+.header > .header-content .nav-header .menu .subnav .subnav-content .subnav-content-options ul li > a {
   text-decoration: none;
   color: #727272;
   font-size: 14px;
 }
-.header .header-content .nav-header .menu .subnav .subnav-content > img {
+.header > .header-content .nav-header .menu .subnav .subnav-content > img {
   margin: 0 25px;
 }
-.header .header-content .nav-header .search {
+.header > .header-content .nav-header .search {
   position: relative;
   text-align: right;
 }
-.header .header-content .nav-header .search input {
+.header > .header-content .nav-header .search input {
   padding: 2px 5px;
   border: 1px solid gainsboro;
   outline: none;
   width: 85%;
 }
-.header .header-content .nav-header .search i {
+.header > .header-content .nav-header .search i {
   position: absolute;
   right: 5px;
   top: 7px;
@@ -210,12 +210,12 @@ body {
   padding: 160px 5% 145px;
   text-align: center;
 }
-.section-intro .intro-title .title-content {
+.section-intro .title-content {
   font-size: 48px;
   color: white;
   font-weight: bold;
 }
-.section-intro .intro-title .title-content span {
+.section-intro .title-content span {
   font-weight: 100;
 }
 .section-intro .intro-content p {
@@ -394,20 +394,19 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .header {
-    display: none;
+    top: 20px;
+    left: 5%;
+    right: 5%;
+    position: absolute;
+    background: transparent;
   }
-
-  .section-intro {
-    padding: 100px 5%;
-  }
-
-  .nav-mobile {
+  .header .nav-mobile {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
   }
-  .nav-mobile .cart {
+  .header .nav-mobile .cart {
     padding: 10px 30px;
     color: white;
     display: flex;
@@ -415,7 +414,7 @@ body {
     cursor: pointer;
     position: relative;
   }
-  .nav-mobile .cart .show-cart {
+  .header .nav-mobile .cart .show-cart {
     display: none;
     position: absolute;
     top: 100%;
@@ -426,7 +425,7 @@ body {
     text-align: left;
     z-index: 999;
   }
-  .nav-mobile .cart .show-cart .show-cart-head {
+  .header .nav-mobile .cart .show-cart .show-cart-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -436,34 +435,34 @@ body {
     padding: 10px 5px;
     font-weight: bold;
   }
-  .nav-mobile .cart .show-cart p {
+  .header .nav-mobile .cart .show-cart p {
     padding: 0 20px;
   }
-  .nav-mobile .cart:hover {
+  .header .nav-mobile .cart:hover {
     opacity: 0.8;
   }
-  .nav-mobile .cart span {
+  .header .nav-mobile .cart span {
     margin: 0 10px;
   }
-  .nav-mobile > .menu {
+  .header .nav-mobile > .menu {
     cursor: pointer;
     display: flex;
     align-items: center;
   }
-  .nav-mobile > .menu:hover {
+  .header .nav-mobile > .menu:hover {
     background-color: #80808047;
   }
-  .nav-mobile > .menu .nav-button {
+  .header .nav-mobile > .menu .nav-button {
     font-size: 25px;
     cursor: pointer;
     margin-left: 20px;
   }
-  .nav-mobile > .menu span {
+  .header .nav-mobile > .menu span {
     color: white;
     font-size: 16px;
     font-family: "Open Sans";
   }
-  .nav-mobile .sidenav {
+  .header .nav-mobile .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -476,58 +475,58 @@ body {
     display: block;
     text-align: center;
   }
-  .nav-mobile .sidenav .logo {
+  .header .nav-mobile .sidenav .logo {
     background: white;
     padding: 50px 0;
     margin-bottom: 50px;
   }
-  .nav-mobile .sidenav .register {
+  .header .nav-mobile .sidenav .register {
     text-align: left;
     border-bottom: 1px solid gainsboro;
   }
-  .nav-mobile .sidenav .header-content {
+  .header .nav-mobile .sidenav .header-content {
     text-align: left;
     margin-top: 20px;
   }
-  .nav-mobile .sidenav .header-content .subnav {
+  .header .nav-mobile .sidenav .header-content .subnav {
     position: relative;
     cursor: pointer;
   }
-  .nav-mobile .sidenav .header-content .subnav > a {
+  .header .nav-mobile .sidenav .header-content .subnav > a {
     text-decoration: none;
   }
-  .nav-mobile .sidenav .header-content .subnav:hover .subnav-content {
+  .header .nav-mobile .sidenav .header-content .subnav:hover .subnav-content {
     display: block;
   }
-  .nav-mobile .sidenav .header-content .subnav .subnav-content {
+  .header .nav-mobile .sidenav .header-content .subnav .subnav-content {
     display: none;
   }
-  .nav-mobile .sidenav .header-content .subnav .subnav-content .subnav-content-options ul li {
+  .header .nav-mobile .sidenav .header-content .subnav .subnav-content .subnav-content-options ul li {
     list-style-type: none;
     margin-bottom: 10px;
   }
-  .nav-mobile .sidenav .header-content .subnav .subnav-content .subnav-content-options ul li .subnav-content-title > a {
+  .header .nav-mobile .sidenav .header-content .subnav .subnav-content .subnav-content-options ul li .subnav-content-title > a {
     text-decoration: none;
   }
-  .nav-mobile .sidenav .header-content .subnav .subnav-content .subnav-content-options ul li > a {
+  .header .nav-mobile .sidenav .header-content .subnav .subnav-content .subnav-content-options ul li > a {
     text-decoration: none;
   }
-  .nav-mobile .sidenav .header-content .search {
+  .header .nav-mobile .sidenav .header-content .search {
     position: relative;
   }
-  .nav-mobile .sidenav .header-content .search input {
+  .header .nav-mobile .sidenav .header-content .search input {
     padding: 2px 5px;
     border: 1px solid gainsboro;
     outline: none;
     margin-left: 30px;
   }
-  .nav-mobile .sidenav .header-content .search i {
+  .header .nav-mobile .sidenav .header-content .search i {
     position: absolute;
     left: 225px;
     top: 5px;
     color: #ababab;
   }
-  .nav-mobile .sidenav a {
+  .header .nav-mobile .sidenav a {
     margin-bottom: 20px;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -536,15 +535,25 @@ body {
     display: block;
     transition: 0.3s;
   }
-  .nav-mobile .sidenav a:hover {
+  .header .nav-mobile .sidenav a:hover {
     color: #f1f1f1;
   }
-  .nav-mobile .sidenav .closebtn {
+  .header .nav-mobile .sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+  }
+  .header .top-bar {
+    display: none;
+  }
+  .header > .header-content {
+    display: none;
+  }
+
+  .section-intro {
+    padding: 100px 5%;
   }
 
   .section-map .section-map-inner {
@@ -569,20 +578,19 @@ body {
 }
 @media screen and (max-width: 767px) {
   .header {
-    display: none;
+    top: 20px;
+    left: 5%;
+    right: 5%;
+    position: absolute;
+    background: transparent;
   }
-
-  .section-intro {
-    padding: 100px 5%;
-  }
-
-  .nav-mobile {
+  .header .nav-mobile {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
   }
-  .nav-mobile .cart {
+  .header .nav-mobile .cart {
     padding: 10px 30px;
     color: white;
     display: flex;
@@ -590,7 +598,7 @@ body {
     cursor: pointer;
     position: relative;
   }
-  .nav-mobile .cart .show-cart {
+  .header .nav-mobile .cart .show-cart {
     display: none;
     position: absolute;
     top: 100%;
@@ -601,7 +609,7 @@ body {
     text-align: left;
     z-index: 999;
   }
-  .nav-mobile .cart .show-cart .show-cart-head {
+  .header .nav-mobile .cart .show-cart .show-cart-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -611,34 +619,34 @@ body {
     padding: 10px 5px;
     font-weight: bold;
   }
-  .nav-mobile .cart .show-cart p {
+  .header .nav-mobile .cart .show-cart p {
     padding: 0 20px;
   }
-  .nav-mobile .cart:hover {
+  .header .nav-mobile .cart:hover {
     opacity: 0.8;
   }
-  .nav-mobile .cart span {
+  .header .nav-mobile .cart span {
     margin: 0 10px;
   }
-  .nav-mobile > .menu {
+  .header .nav-mobile > .menu {
     cursor: pointer;
     display: flex;
     align-items: center;
   }
-  .nav-mobile > .menu:hover {
+  .header .nav-mobile > .menu:hover {
     background-color: #80808047;
   }
-  .nav-mobile > .menu .nav-button {
+  .header .nav-mobile > .menu .nav-button {
     font-size: 25px;
     cursor: pointer;
     margin-left: 20px;
   }
-  .nav-mobile > .menu span {
+  .header .nav-mobile > .menu span {
     color: white;
     font-size: 16px;
     font-family: "Open Sans";
   }
-  .nav-mobile .sidenav {
+  .header .nav-mobile .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -651,58 +659,58 @@ body {
     display: block;
     text-align: center;
   }
-  .nav-mobile .sidenav .logo {
+  .header .nav-mobile .sidenav .logo {
     background: white;
     padding: 50px 0;
     margin-bottom: 50px;
   }
-  .nav-mobile .sidenav .register {
+  .header .nav-mobile .sidenav .register {
     text-align: left;
     border-bottom: 1px solid gainsboro;
   }
-  .nav-mobile .sidenav .header-content {
+  .header .nav-mobile .sidenav .header-content {
     text-align: left;
     margin-top: 20px;
   }
-  .nav-mobile .sidenav .header-content .subnav {
+  .header .nav-mobile .sidenav .header-content .subnav {
     position: relative;
     cursor: pointer;
   }
-  .nav-mobile .sidenav .header-content .subnav > a {
+  .header .nav-mobile .sidenav .header-content .subnav > a {
     text-decoration: none;
   }
-  .nav-mobile .sidenav .header-content .subnav:hover .subnav-content {
+  .header .nav-mobile .sidenav .header-content .subnav:hover .subnav-content {
     display: block;
   }
-  .nav-mobile .sidenav .header-content .subnav .subnav-content {
+  .header .nav-mobile .sidenav .header-content .subnav .subnav-content {
     display: none;
   }
-  .nav-mobile .sidenav .header-content .subnav .subnav-content .subnav-content-options ul li {
+  .header .nav-mobile .sidenav .header-content .subnav .subnav-content .subnav-content-options ul li {
     list-style-type: none;
     margin-bottom: 10px;
   }
-  .nav-mobile .sidenav .header-content .subnav .subnav-content .subnav-content-options ul li .subnav-content-title > a {
+  .header .nav-mobile .sidenav .header-content .subnav .subnav-content .subnav-content-options ul li .subnav-content-title > a {
     text-decoration: none;
   }
-  .nav-mobile .sidenav .header-content .subnav .subnav-content .subnav-content-options ul li > a {
+  .header .nav-mobile .sidenav .header-content .subnav .subnav-content .subnav-content-options ul li > a {
     text-decoration: none;
   }
-  .nav-mobile .sidenav .header-content .search {
+  .header .nav-mobile .sidenav .header-content .search {
     position: relative;
   }
-  .nav-mobile .sidenav .header-content .search input {
+  .header .nav-mobile .sidenav .header-content .search input {
     padding: 2px 5px;
     border: 1px solid gainsboro;
     outline: none;
     margin-left: 30px;
   }
-  .nav-mobile .sidenav .header-content .search i {
+  .header .nav-mobile .sidenav .header-content .search i {
     position: absolute;
     left: 225px;
     top: 5px;
     color: #ababab;
   }
-  .nav-mobile .sidenav a {
+  .header .nav-mobile .sidenav a {
     margin-bottom: 20px;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -711,15 +719,25 @@ body {
     display: block;
     transition: 0.3s;
   }
-  .nav-mobile .sidenav a:hover {
+  .header .nav-mobile .sidenav a:hover {
     color: #f1f1f1;
   }
-  .nav-mobile .sidenav .closebtn {
+  .header .nav-mobile .sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+  }
+  .header .top-bar {
+    display: none;
+  }
+  .header > .header-content {
+    display: none;
+  }
+
+  .section-intro {
+    padding: 100px 5%;
   }
 
   .section-branch .section-branch-inner {
